@@ -179,7 +179,7 @@
   .start h2 { color:var(--white); }
   .start .sec-head p { color:#C9D3DE; }
   .form-card { background:var(--white); border-radius:20px; padding:10px; max-width:720px; margin-inline:auto; }
-  .form-card iframe { width:100%; height:3650px; border:0; display:block; border-radius:14px; }
+  .form-card iframe { width:100%; height:2900px; border:0; display:block; border-radius:14px; }
   .form-note { padding:30px 22px; text-align:center; color:var(--muted); }
   .alt-cta { text-align:center; margin-top:28px; color:#C9D3DE; }
   .alt-cta .btn { margin-top:12px; }
@@ -220,13 +220,16 @@
     .calc { grid-template-columns:1fr; padding:20px; gap:24px; }
     .about { grid-template-columns:1fr; }
     .about-badge { width:92px; height:92px; }
-    .form-card iframe { height:4150px; }
+    .form-card iframe { height:3050px; }
     .flow { flex-direction:column; }
     .fstep:not(:last-child)::after { display:none; }
     .fab { display:flex; }
     footer { padding-bottom:96px; }
     .chip { font-size:16px; padding:10px 14px; }
   }
+  .consent { max-width:720px; margin:18px auto 0; color:#C9D3DE; font-size:15px; text-align:center; }
+  .consent a { color:#fff; text-decoration:underline; text-underline-offset:3px; }
+  @media (max-width:480px) { .form-card iframe { height:3300px; } }
 </style>
 </head>
 <body>
@@ -256,6 +259,7 @@
       <div class="form-card">
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdNFjMx6Lw1a4cCDJQBVDZ1jI-HeTOBEKimhgk3h_id2JMSZw/viewform?embedded=true" title="שאלון ייעוץ והדרכה ראשונית" loading="lazy">טוען…</iframe>
       </div>
+      <p class="consent">בשליחת השאלון אתם מאשרים את <a href="privacy.html">מדיניות הפרטיות</a> ואת <a href="terms.html">תנאי השימוש</a>, ומסכימים שאצור איתכם קשר בנוגע לפנייתכם. אין צורך למסור שמות לקוחות או מידע רגיש.</p>
       <div class="alt-cta">
         <p>סיימתם? אפשר לקבוע שיחה ישר.</p>
         <a class="btn btn-amber" href="https://calendly.com/yp292287/30min" target="_blank" rel="noopener">קביעת שיחה טלפונית</a>
@@ -276,7 +280,7 @@
         <a class="chip" href="mailto:yp292287@gmail.com"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg><bdi>yp292287@gmail.com</bdi></a>
       </div>
     </div>
-    <p class="legal">המידע שנמסר בשאלון משמש ליצירת קשר ולהכנה לשיחה בלבד.</p>
+    <p class="legal">המידע שנמסר בשאלון משמש ליצירת קשר ולהכנה לשיחה בלבד.<br><a href="terms.html">תנאי שימוש</a> · <a href="privacy.html">מדיניות פרטיות</a> · <a href="accessibility.html">הצהרת נגישות</a></p>
   </div>
 </footer>
 </body>
